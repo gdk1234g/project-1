@@ -1,0 +1,50 @@
+[
+  {
+    "path": "notes/seed43_45_validation_133c05dd.md",
+    "removed_external_scope_paragraphs": 0,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "seed43–45 逐类别验证汇总"
+  },
+  {
+    "path": "notes/experiment_record_c61a30ab.md",
+    "removed_external_scope_paragraphs": 0,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "较早版本的实验历史记录"
+  },
+  {
+    "path": "notes/baseline_summary_ed51c27e.md",
+    "removed_external_scope_paragraphs": 2,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "ATLDSD 基线阶段总结"
+  },
+  {
+    "path": "notes/experiment_record_0bcf814b.md",
+    "removed_external_scope_paragraphs": 0,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "较早版本的实验历史记录"
+  },
+  {
+    "path": "notes/annotation_review_limits_62a20fd2.md",
+    "removed_external_scope_paragraphs": 2,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "标注复核与模型局限"
+  },
+  {
+    "path": "notes/seed46_resolution_review_8bd73d7d.md",
+    "removed_external_scope_paragraphs": 2,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "seed46 分辨率实验结果复核"
+  },
+  {
+    "path": "notes/experiment_record_eec4f2de.md",
+    "removed_external_scope_paragraphs": 1,
+    "record_role": "current_main_history",
+    "title": "主实验历史记录"
+  },
+  {
+    "path": "notes/experiment_record_7f5652b8.md",
+    "removed_external_scope_paragraphs": 0,
+    "record_role": "historical_snapshot_or_specialized_review",
+    "title": "较早版本的实验历史记录"
+  }
+]

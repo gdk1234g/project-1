@@ -1,0 +1,16 @@
+config_id,file,kind,seed,image_size,num_classes,epochs,batch_size,learning_rate,weight_decay,workers,early_stopping_patience,augmentation,loss,loss_parameters,train_ratio,val_ratio,evaluation_batch_size,plan_entries
+C01,ablation_plan.json,消融计划列表,,,,,,,,,,,,,,,,"[{""augmentation"": ""none"", ""image_size"": 256, ""loss"": ""ce_dice"", ""name"": ""baseline_256""}, {""augmentation"": ""strong"", ""image_size"": 256, ""loss"": ""ce_dice"", ""name"": ""augment_strong_256""}, {""augmentation"": ""strong"", ""image_size"": 256, ""loss"": ""focal"", ""name"": ""focal_256""}, {""augmentation"": ""strong"", ""image_size"": 256, ""loss"": ""tversky"", ""name"": ""tversky_256""}, {""augmentation"": ""strong"", ""image_size"": 256, ""loss"": ""focal_tversky"", ""name"": ""focal_tversky_256""}, {""augmentation"": ""strong"", ""image_size"": 384, ""loss"": ""focal_tversky"", ""name"": ""focal_tversky_384""}]"
+C02,baseline.json,历史参数文件,42,256,6,50,8,0.001,0.0001,0,10,,,{},0.7,0.15,8,
+C03,baseline_recheck_256.json,历史参数文件,42,256,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C04,baseline_seed43.json,历史参数文件,43,256,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C05,baseline_seed44.json,历史参数文件,44,256,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C06,baseline_seed45.json,历史参数文件,45,256,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C07,baseline_seed45_complete.json,历史参数文件,45,256,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C08,baseline_seed46_res256.json,历史参数文件,46,256,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C09,baseline_seed46_res384.json,历史参数文件,46,384,6,50,8,0.001,0.0001,4,10,none,ce_dice,{},0.7,0.15,8,
+C10,cloud_first_train.json,历史参数文件,42,256,6,50,8,0.001,0.0001,4,10,,,{},0.7,0.15,8,
+C11,mix_ce_dice_tversky_256.json,历史参数文件,42,256,6,50,8,0.001,0.0001,4,10,none,ce_dice_tversky,"{""tversky_alpha"": 0.3, ""tversky_beta"": 0.7, ""tversky_weight"": 0.5}",0.7,0.15,8,
+C12,mix_w02_seed43.json,历史参数文件,43,256,6,50,8,0.001,0.0001,4,10,none,ce_dice_tversky,"{""tversky_alpha"": 0.3, ""tversky_beta"": 0.7, ""tversky_weight"": 0.2}",0.7,0.15,8,
+C13,mix_w02_seed44.json,历史参数文件,44,256,6,50,8,0.001,0.0001,4,10,none,ce_dice_tversky,"{""tversky_alpha"": 0.3, ""tversky_beta"": 0.7, ""tversky_weight"": 0.2}",0.7,0.15,8,
+C14,mix_w02_seed45.json,历史参数文件,45,256,6,50,8,0.001,0.0001,4,10,none,ce_dice_tversky,"{""tversky_alpha"": 0.3, ""tversky_beta"": 0.7, ""tversky_weight"": 0.2}",0.7,0.15,8,
+C15,mix_w02_seed45_complete.json,历史参数文件,45,256,6,50,8,0.001,0.0001,4,10,none,ce_dice_tversky,"{""tversky_alpha"": 0.3, ""tversky_beta"": 0.7, ""tversky_weight"": 0.2}",0.7,0.15,8,

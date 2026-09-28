@@ -1,0 +1,9 @@
+{
+  "record_kind": "sanitized_historical_training_record",
+  "history_numeric_strings_preserved": true,
+  "local_paths_and_launcher_metadata_removed": true,
+  "log_kind": "not_available",
+  "snapshot_kind": "not_available",
+  "source_group_count": 1,
+  "limitations": "These are historical records; current released source is adapted and is not the exact training source snapshot. No dataset, sample manifest or checkpoint is included. Missing or placeholder logs are not reconstructed."
+}

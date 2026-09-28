@@ -1,0 +1,29 @@
+{
+  "name": "baseline_seed46_res256",
+  "seed": 46,
+  "image_size": 256,
+  "augmentation": "none",
+  "loss": "ce_dice",
+  "loss_parameters": {},
+  "epochs": 50,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "early_stopping_patience": 10,
+  "workers": 4,
+  "dynamic_class_weights": [
+    0.0751114934682846,
+    0.10834047943353653,
+    0.7539530992507935,
+    2.396482229232788,
+    1.733272671699524,
+    0.9328400492668152
+  ],
+  "train_samples": 1148,
+  "val_samples": 246,
+  "split_sha256": {
+    "train": "af1ed8a12ecc2f29160e17ed0c704c040452f30a181c4889310700804f482b8b",
+    "val": "ef7b0e9d22486b54f2d8d3f4eeec3a95e656e155c187956bd00a5507befad397",
+    "test": "3661cf70f58d7dad74a0fb71825f7c7121d45915fd105a00df4780f1ca9b0098"
+  }
+}

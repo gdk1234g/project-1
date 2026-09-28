@@ -1,0 +1,122 @@
+[
+  {
+    "path": "metrics/legacy_finetune_evaluation/metrics.json",
+    "evaluation_split": "test",
+    "miou": 0.7422993567160961,
+    "mdice": 0.8411648736188259,
+    "checkpoint_epoch": 53,
+    "training_run_reference": null
+  },
+  {
+    "path": "metrics/mix_w02_seed45__seed45_complete_validation__baseline/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7252040271171428,
+    "mdice": 0.827069771577145,
+    "checkpoint_epoch": 46,
+    "training_run_reference": "baseline_seed45_complete"
+  },
+  {
+    "path": "metrics/mix_w02_seed45__seed45_complete_validation__mix_w02/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7220566307130323,
+    "mdice": 0.8239744922781188,
+    "checkpoint_epoch": 42,
+    "training_run_reference": "mix_w02_seed45_complete"
+  },
+  {
+    "path": "metrics/paired_validation_seed43__baseline/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7323264636636394,
+    "mdice": 0.8324874219982457,
+    "checkpoint_epoch": 49,
+    "training_run_reference": "baseline_seed43"
+  },
+  {
+    "path": "metrics/paired_validation_seed43__mix_w02/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7363839485338309,
+    "mdice": 0.8359318054736654,
+    "checkpoint_epoch": 49,
+    "training_run_reference": "mix_w02_seed43"
+  },
+  {
+    "path": "metrics/paired_validation_seed44__baseline/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7379142787286637,
+    "mdice": 0.8360595887598626,
+    "checkpoint_epoch": 43,
+    "training_run_reference": "baseline_seed44"
+  },
+  {
+    "path": "metrics/paired_validation_seed44__mix_w02/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7224553160722871,
+    "mdice": 0.8249657847741717,
+    "checkpoint_epoch": 37,
+    "training_run_reference": "mix_w02_seed44"
+  },
+  {
+    "path": "metrics/final_test_seed45_baseline/metrics.json",
+    "evaluation_split": "test",
+    "miou": 0.714559367496002,
+    "mdice": 0.8181348858440853,
+    "checkpoint_epoch": 46,
+    "training_run_reference": "baseline_seed45_complete"
+  },
+  {
+    "path": "metrics/seed46_resolution_validation__res256/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7357250239753302,
+    "mdice": 0.835772506925902,
+    "checkpoint_epoch": 40,
+    "training_run_reference": "baseline_seed46_res256"
+  },
+  {
+    "path": "metrics/seed46_resolution_validation__res384/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7220929087050064,
+    "mdice": 0.8252350896321548,
+    "checkpoint_epoch": 50,
+    "training_run_reference": "baseline_seed46_res384"
+  },
+  {
+    "path": "metrics/baseline_256_gpu_test/metrics.json",
+    "evaluation_split": "test",
+    "miou": 0.7304081859550887,
+    "mdice": 0.8314529267238138,
+    "checkpoint_epoch": 50,
+    "training_run_reference": "baseline_256_gpu"
+  },
+  {
+    "path": "metrics/seed43_44_classwise__baseline_seed43/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7323354258480318,
+    "mdice": 0.832493914409127,
+    "checkpoint_epoch": 49,
+    "training_run_reference": "baseline_seed43"
+  },
+  {
+    "path": "metrics/seed43_44_classwise__baseline_seed44/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7379181399517393,
+    "mdice": 0.8360626455218517,
+    "checkpoint_epoch": 43,
+    "training_run_reference": "baseline_seed44"
+  },
+  {
+    "path": "metrics/seed43_44_classwise__mix_w02_seed43/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.7363667579977929,
+    "mdice": 0.8359186291343265,
+    "checkpoint_epoch": 49,
+    "training_run_reference": "mix_w02_seed43"
+  },
+  {
+    "path": "metrics/seed43_44_classwise__mix_w02_seed44/metrics.json",
+    "evaluation_split": "validation",
+    "miou": 0.722433678129942,
+    "mdice": 0.8249479980888252,
+    "checkpoint_epoch": 37,
+    "training_run_reference": "mix_w02_seed44"
+  }
+]

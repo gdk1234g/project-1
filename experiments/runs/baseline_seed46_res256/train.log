@@ -1,0 +1,55 @@
+# Sanitized log: only numeric training/progress lines are retained.
+动态类别权重： [0.07509999722242355, 0.10830000042915344, 0.7540000081062317, 2.3965001106262207, 1.733299970626831, 0.9327999949455261]
+Epoch 1/50: mIoU=0.4669, mDice=0.5619
+Epoch 2/50: mIoU=0.5047, mDice=0.6186
+Epoch 3/50: mIoU=0.4945, mDice=0.6103
+Epoch 4/50: mIoU=0.5326, mDice=0.6604
+Epoch 5/50: mIoU=0.2195, mDice=0.3163
+Epoch 6/50: mIoU=0.4891, mDice=0.6013
+Epoch 7/50: mIoU=0.5625, mDice=0.6755
+Epoch 8/50: mIoU=0.6266, mDice=0.7432
+Epoch 9/50: mIoU=0.5682, mDice=0.6854
+Epoch 10/50: mIoU=0.6053, mDice=0.7288
+Epoch 11/50: mIoU=0.6645, mDice=0.7781
+Epoch 12/50: mIoU=0.5656, mDice=0.6803
+Epoch 13/50: mIoU=0.6138, mDice=0.7327
+Epoch 14/50: mIoU=0.6432, mDice=0.7566
+Epoch 15/50: mIoU=0.6270, mDice=0.7412
+Epoch 16/50: mIoU=0.6642, mDice=0.7789
+Epoch 17/50: mIoU=0.6827, mDice=0.7929
+Epoch 18/50: mIoU=0.6864, mDice=0.7955
+Epoch 19/50: mIoU=0.6912, mDice=0.8000
+Epoch 20/50: mIoU=0.6931, mDice=0.8017
+Epoch 21/50: mIoU=0.6908, mDice=0.7996
+Epoch 22/50: mIoU=0.6560, mDice=0.7725
+Epoch 23/50: mIoU=0.6693, mDice=0.7806
+Epoch 24/50: mIoU=0.6848, mDice=0.7975
+Epoch 25/50: mIoU=0.6422, mDice=0.7566
+Epoch 26/50: mIoU=0.7110, mDice=0.8163
+Epoch 27/50: mIoU=0.7096, mDice=0.8143
+Epoch 28/50: mIoU=0.7041, mDice=0.8106
+Epoch 29/50: mIoU=0.7030, mDice=0.8107
+Epoch 30/50: mIoU=0.7178, mDice=0.8214
+Epoch 31/50: mIoU=0.7060, mDice=0.8129
+Epoch 32/50: mIoU=0.7264, mDice=0.8282
+Epoch 33/50: mIoU=0.7107, mDice=0.8168
+Epoch 34/50: mIoU=0.7132, mDice=0.8181
+Epoch 35/50: mIoU=0.7109, mDice=0.8160
+Epoch 36/50: mIoU=0.7239, mDice=0.8270
+Epoch 37/50: mIoU=0.7098, mDice=0.8155
+Epoch 38/50: mIoU=0.7274, mDice=0.8289
+Epoch 39/50: mIoU=0.7136, mDice=0.8173
+Epoch 40/50: mIoU=0.7357, mDice=0.8358
+Epoch 41/50: mIoU=0.7199, mDice=0.8220
+Epoch 42/50: mIoU=0.7138, mDice=0.8180
+Epoch 43/50: mIoU=0.7139, mDice=0.8181
+Epoch 44/50: mIoU=0.7330, mDice=0.8333
+Epoch 45/50: mIoU=0.7248, mDice=0.8264
+Epoch 46/50: mIoU=0.7289, mDice=0.8301
+Epoch 47/50: mIoU=0.7292, mDice=0.8301
+Epoch 48/50: mIoU=0.7349, mDice=0.8346
+Epoch 49/50: mIoU=0.7300, mDice=0.8309
+Epoch 50/50: mIoU=0.7313, mDice=0.8319
+触发 Early Stopping
+训练完成：best_epoch=40, best_val_mIoU=0.735725, best_val_mDice=0.835773
+Exit code: 0

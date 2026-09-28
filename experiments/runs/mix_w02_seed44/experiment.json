@@ -1,0 +1,23 @@
+{
+  "name": "mix_w02_seed44",
+  "image_size": 256,
+  "augmentation": "none",
+  "loss": "ce_dice_tversky",
+  "loss_parameters": {
+    "tversky_weight": 0.2,
+    "tversky_alpha": 0.3,
+    "tversky_beta": 0.7
+  },
+  "epochs": 50,
+  "batch_size": 8,
+  "dynamic_class_weights": [
+    0.0751114934682846,
+    0.10834047943353653,
+    0.7539530992507935,
+    2.396482229232788,
+    1.733272671699524,
+    0.9328400492668152
+  ],
+  "train_samples": 1148,
+  "val_samples": 246
+}

@@ -1,0 +1,17 @@
+run,recorded_name,history_rows,best_epoch_by_val_miou,best_val_miou,val_mdice_at_best_miou,log_available,config_snapshot_available,unverified_config_copy_available,seed_in_snapshot,placeholder_log_excluded
+augment_strong_256_gpu,augment_strong_256_gpu,50,45,0.7262055178458136,0.8269333986295874,True,False,False,,False
+baseline_256_gpu,baseline_256_gpu,50,50,0.7326236191711636,0.8311795646072123,False,False,False,,False
+baseline_recheck_256_gpu,baseline_recheck_256_gpu,50,42,0.7257317685327963,0.8261571878938435,True,False,False,,False
+baseline_seed43,baseline_seed43,50,49,0.7323264636636394,0.8324874219982457,True,True,False,43,False
+baseline_seed44,baseline_seed44,50,43,0.7379142787286637,0.8360595887598626,False,False,False,,False
+baseline_seed45_complete,baseline_seed45_complete,50,46,0.7252040271171428,0.827069771577145,True,True,False,45,False
+baseline_seed45_new,baseline_seed45_new,50,46,0.7347201054281339,0.8348481478261598,False,False,True,,True
+baseline_seed46_res256,baseline_seed46_res256,50,40,0.7357250239753302,0.835772506925902,True,True,False,46,False
+baseline_seed46_res384,baseline_seed46_res384,50,50,0.7220929087050064,0.8252350896321548,True,True,False,46,False
+loss_tversky_256_gpu,loss_tversky_256_gpu,15,5,0.4537412901615687,0.5736151651277668,True,False,False,,False
+mix_ce_dice_tversky_256_gpu,mix_ce_dice_tversky_256_gpu,50,41,0.7219327546464349,0.8236327888341709,True,False,False,,False
+mix_ce_dice_tversky_w02_256_gpu,mix_ce_dice_tversky_w02_256_gpu,50,41,0.7272117882667843,0.8279020536450782,False,False,False,,False
+mix_w02_seed43,mix_w02_seed43,50,49,0.7363839485338309,0.8359318054736654,True,True,False,43,False
+mix_w02_seed44,mix_w02_seed44,47,37,0.7224553160722871,0.8249657847741717,False,False,False,,False
+mix_w02_seed45,mix_w02_seed45,50,44,0.7314693682397335,0.8313492638190154,False,False,True,,True
+mix_w02_seed45_complete,mix_w02_seed45_complete,50,42,0.7220566307130323,0.8239744922781188,True,True,False,45,False

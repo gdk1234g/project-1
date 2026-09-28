@@ -1,0 +1,129 @@
+{
+  "evaluation_split": "validation",
+  "checkpoint_epoch": 49,
+  "checkpoint_val_miou": 0.7363839485338309,
+  "validation_samples": 246,
+  "validation_manifest_sha256": "9e048b32771837335e29af2912612fc518bd6f5f1544092bef704b733187b6a4",
+  "device": "cpu",
+  "confusion_matrix": [
+    [
+      10414205,
+      177398,
+      175,
+      53,
+      64,
+      498
+    ],
+    [
+      99485,
+      5161190,
+      17223,
+      3423,
+      3818,
+      38195
+    ],
+    [
+      94,
+      7959,
+      104050,
+      0,
+      151,
+      0
+    ],
+    [
+      543,
+      1324,
+      45,
+      9857,
+      416,
+      0
+    ],
+    [
+      276,
+      5859,
+      0,
+      330,
+      16296,
+      0
+    ],
+    [
+      2795,
+      7450,
+      377,
+      0,
+      0,
+      48307
+    ]
+  ],
+  "pixel_accuracy": 0.977176883356358,
+  "miou": 0.7363667579977929,
+  "mdice": 0.8359186291343265,
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "背景",
+      "iou": 0.9736918575569399,
+      "dice": 0.9866705928069113,
+      "precision": 0.9901883526704989,
+      "recall": 0.9831777389679556,
+      "f1": 0.9866705928069112,
+      "support_pixels": 10592393
+    },
+    {
+      "class_id": 1,
+      "class_name": "健康叶片",
+      "iou": 0.9344354957268486,
+      "dice": 0.9661066474338468,
+      "precision": 0.9626966451415546,
+      "recall": 0.9695408929817291,
+      "f1": 0.9661066474338468,
+      "support_pixels": 5323334
+    },
+    {
+      "class_id": 2,
+      "class_name": "锈病",
+      "iou": 0.7999292710303366,
+      "dice": 0.8888452273154397,
+      "precision": 0.8537786165586281,
+      "recall": 0.9269157446505247,
+      "f1": 0.8888452273154398,
+      "support_pixels": 112254
+    },
+    {
+      "class_id": 3,
+      "class_name": "交链孢叶斑病",
+      "iou": 0.616409230191983,
+      "dice": 0.7626895697926339,
+      "precision": 0.7214374588304179,
+      "recall": 0.8089454247025031,
+      "f1": 0.7626895697926339,
+      "support_pixels": 12185
+    },
+    {
+      "class_id": 4,
+      "class_name": "灰斑病",
+      "iou": 0.5988974641675855,
+      "dice": 0.7491380499241483,
+      "precision": 0.7855386840202458,
+      "recall": 0.715961513114538,
+      "f1": 0.7491380499241485,
+      "support_pixels": 22761
+    },
+    {
+      "class_id": 5,
+      "class_name": "褐斑病",
+      "iou": 0.4948372293130647,
+      "dice": 0.6620616875329783,
+      "precision": 0.5552528735632184,
+      "recall": 0.8197491897028628,
+      "f1": 0.6620616875329784,
+      "support_pixels": 58929
+    }
+  ],
+  "publication_notes": {
+    "evaluation_split": "validation",
+    "scope_source": "original_evaluation_split",
+    "training_run_reference": "mix_w02_seed43",
+    "training_history_link": "available"
+  }
+}

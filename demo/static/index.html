@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#124c39">
+  <title>叶析 · 苹果叶病害分割</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="叶析首页">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 5C12 3 5 9 7 18c2 9 16 10 19-13Z" fill="currentColor"/><path d="m5 28 17-17" fill="none" stroke="#d8edc7" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span>叶析<span class="brand-sub">LEAF VISION</span></span>
+      </a>
+      <div class="connection"><span id="statusDot" class="status-dot"></span><span id="serverState" role="status">正在连接模型</span><button id="retryHealth" class="text-button" type="button">重新检查</button></div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <div><div class="eyebrow">苹果叶片 · 病害分割演示</div><h1>一张叶片，读懂病斑。</h1><p>上传苹果叶图片，查看模型识别出的病斑位置与面积比例。</p></div>
+      <div class="intro-note"><span class="note-number">04</span><span>种病害类别<br><strong>逐像素分割与面积估计</strong></span></div>
+    </section>
+    <section class="workspace" aria-label="图片分析工作台">
+      <div class="upload-panel">
+        <div class="section-title"><span class="step-no">01</span><h2>上传叶片图片</h2></div>
+        <p class="section-description">建议选择光线清晰、叶片主体完整的图片。</p>
+        <div id="drop" class="drop-zone">
+          <div id="uploadPrompt" class="upload-prompt">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="9" width="34" height="30" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="19" r="3" fill="currentColor"/><path d="m9 34 10-10 7 7 7-8 7 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <strong>拖拽图片到这里</strong><span>或从电脑中选择一张图片</span>
+          </div>
+          <img id="preview" class="original-preview" alt="上传的原始叶片图片" hidden>
+          <label for="file" class="choose-button">选择图片</label>
+          <input id="file" type="file" accept=".jpg,.jpeg,.png,.webp,.bmp" class="visually-hidden">
+        </div>
+        <div class="file-details"><span id="filename">尚未选择图片</span><button id="clear" class="text-button" type="button" disabled>清除</button></div>
+        <div class="upload-hint">JPG / PNG / WEBP / BMP · 单张不超过 8 MB</div>
+        <button id="run" class="primary-button" type="button" disabled><span id="runSpinner" class="spinner" hidden></span><span id="runLabel">开始分析</span><span aria-hidden="true">↗</span></button>
+        <p id="error" class="error-message" role="alert" hidden></p>
+        <p class="privacy-note">图片只用于本次分析，服务不保留上传图片。</p>
+        <div class="model-card"><span class="model-icon" aria-hidden="true">✳</span><div><strong>苹果叶片专用模型</strong><span id="modelInfo">正在读取模型状态…</span></div></div>
+      </div>
+      <div class="result-panel">
+        <div class="result-heading"><div class="section-title"><span class="step-no">02</span><h2>查看分析结果</h2></div><span id="resultStatus" class="result-status">等待上传</span></div>
+        <div id="empty" class="empty-state">
+          <div class="empty-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M50 12C27 7 13 18 17 36s29 14 33-24Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 53 30-29" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3>从一张苹果叶图片开始</h3><p>分析完成后，这里会展示病斑叠加图、<br>分割掩膜和各类病害的面积估计。</p>
+          <div class="empty-flow"><span>上传图片</span><i>→</i><span>模型分割</span><i>→</i><span>返回结果</span></div>
+        </div>
+        <div id="results" hidden>
+          <div class="view-toolbar"><div class="tabs" role="tablist" aria-label="结果视图"><button id="overlayTab" role="tab" aria-selected="true" aria-controls="imagePanel" type="button">病斑叠加</button><button id="maskTab" role="tab" aria-selected="false" aria-controls="imagePanel" type="button" tabindex="-1">彩色掩膜</button></div><button id="downloadImage" type="button" class="download-button">↓ 下载当前结果图</button></div>
+          <div id="imagePanel" class="result-stage" role="tabpanel" aria-labelledby="overlayTab"><img id="resultImage" alt="模型预测病斑叠加图"></div>
+          <div id="legend" class="legend" aria-label="颜色与类别"></div>
+          <div class="metric-grid"><div class="metric"><span>主要预测</span><strong id="dominant">—</strong><small>病斑面积最大的类别</small></div><div class="metric"><span>总病斑占比</span><strong id="areaPercent">—</strong><small>占预测叶片区域的比例</small></div><div class="metric"><span>模型推理用时</span><strong id="inferenceTime">—</strong><small id="dimensions">—</small></div></div>
+          <p id="resultNotice" class="result-notice"></p>
+          <div class="breakdown-heading"><h3>各类病斑面积</h3><span>占预测叶片区域</span></div>
+          <div id="diseaseAreas" class="disease-areas"></div>
+          <div class="result-footer"><span id="pixelInfo"></span><button id="downloadReport" class="text-button" type="button">下载分析数据 JSON ↓</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="explanation" aria-label="如何解读结果"><div><span class="small-no">01 /</span><h3>看病斑位置</h3><p>叠加图保留原始图像，颜色标出模型预测的叶片与病斑区域。</p></div><div><span class="small-no">02 /</span><h3>看面积分布</h3><p>面积比例由预测像素统计得到，不是分类置信度或诊断概率。</p></div><div><span class="small-no">03 /</span><h3>结合原图判断</h3><p>模型可能漏检或误检；未检出病斑不能作为叶片健康的保证。</p></div></section>
+  </main>
+  <footer class="container site-footer"><span>叶析 · 苹果叶病害分割研究演示</span><span>数据来源：<a href="https://doi.org/10.11922/sciencedb.01627" target="_blank" rel="noopener noreferrer">ATLDSD / ScienceDB</a></span></footer>
+</body>
+</html>

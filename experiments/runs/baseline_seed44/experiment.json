@@ -1,0 +1,19 @@
+{
+  "name": "baseline_seed44",
+  "image_size": 256,
+  "augmentation": "none",
+  "loss": "ce_dice",
+  "loss_parameters": {},
+  "epochs": 50,
+  "batch_size": 8,
+  "dynamic_class_weights": [
+    0.0751114934682846,
+    0.10834047943353653,
+    0.7539530992507935,
+    2.396482229232788,
+    1.733272671699524,
+    0.9328400492668152
+  ],
+  "train_samples": 1148,
+  "val_samples": 246
+}

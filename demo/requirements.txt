@@ -1,0 +1,4 @@
+# Install these in the same Python environment as the project's PyTorch/OpenCV dependencies.
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32

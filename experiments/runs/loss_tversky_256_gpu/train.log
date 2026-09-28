@@ -1,0 +1,18 @@
+# Sanitized log: only numeric training/progress lines are retained.
+动态类别权重： [0.07509999722242355, 0.10830000042915344, 0.7540000081062317, 2.3965001106262207, 1.733299970626831, 0.9327999949455261]
+Epoch 1/50: mIoU=0.1837, mDice=0.2626
+Epoch 2/50: mIoU=0.3269, mDice=0.4282
+Epoch 3/50: mIoU=0.3668, mDice=0.4674
+Epoch 4/50: mIoU=0.4043, mDice=0.4907
+Epoch 5/50: mIoU=0.4537, mDice=0.5736
+Epoch 6/50: mIoU=0.2851, mDice=0.3334
+Epoch 7/50: mIoU=0.2929, mDice=0.3508
+Epoch 8/50: mIoU=0.2910, mDice=0.3537
+Epoch 9/50: mIoU=0.3196, mDice=0.3763
+Epoch 10/50: mIoU=0.3382, mDice=0.3927
+Epoch 11/50: mIoU=0.3516, mDice=0.4028
+Epoch 12/50: mIoU=0.3553, mDice=0.4061
+Epoch 13/50: mIoU=0.2860, mDice=0.3454
+Epoch 14/50: mIoU=0.3612, mDice=0.4100
+Epoch 15/50: mIoU=0.3577, mDice=0.4067
+触发 Early Stopping

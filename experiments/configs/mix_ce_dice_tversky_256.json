@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "image_size": 256,
+  "num_classes": 6,
+  "split": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "directory": "splits"
+  },
+  "training": {
+    "epochs": 50,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "workers": 4,
+    "early_stopping_patience": 10,
+    "weight_decay": 0.0001
+  },
+  "evaluation": {
+    "batch_size": 8,
+    "weights": "checkpoints/best_unet.pth"
+  },
+  "experiment": {
+    "augmentation": "none",
+    "loss": "ce_dice_tversky",
+    "loss_parameters": {
+      "tversky_weight": 0.5,
+      "tversky_alpha": 0.3,
+      "tversky_beta": 0.7
+    }
+  },
+  "dataset_root": "data/ATLDSD"
+}

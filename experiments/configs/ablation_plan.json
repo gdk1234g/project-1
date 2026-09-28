@@ -1,0 +1,38 @@
+[
+  {
+    "name": "baseline_256",
+    "image_size": 256,
+    "augmentation": "none",
+    "loss": "ce_dice"
+  },
+  {
+    "name": "augment_strong_256",
+    "image_size": 256,
+    "augmentation": "strong",
+    "loss": "ce_dice"
+  },
+  {
+    "name": "focal_256",
+    "image_size": 256,
+    "augmentation": "strong",
+    "loss": "focal"
+  },
+  {
+    "name": "tversky_256",
+    "image_size": 256,
+    "augmentation": "strong",
+    "loss": "tversky"
+  },
+  {
+    "name": "focal_tversky_256",
+    "image_size": 256,
+    "augmentation": "strong",
+    "loss": "focal_tversky"
+  },
+  {
+    "name": "focal_tversky_384",
+    "image_size": 384,
+    "augmentation": "strong",
+    "loss": "focal_tversky"
+  }
+]
