@@ -154,8 +154,3 @@ U-Net 方法参考：Ronneberger, O.; Fischer, P.; Brox, T. U-Net: Convolutional
 
 经过整理的历史配置、训练曲线、训练日志摘录及聚合评估结果位于 [experiments/README.md](experiments/README.md)。它们保留原实验数值，并标明缺项；不包含样本清单、图片、权重或完整服务器日志。
 
-## 上传 GitHub 与学习 Git
-
-Git 上传指南、命令速查与动手练习作为本地学习资料单独保存，不纳入本仓库。
-
-辅助脚本位于 `scripts/check_publication.py`、`scripts/update_record_manifest.py` 和 `scripts/create_git_learning_lab.py`。前两者帮助检查发布副本与维护实验文件哈希；学习脚本在新建临时目录练习，不连接远程。检查范围与限制见脚本说明，技术检查不代替许可与版权核实。
